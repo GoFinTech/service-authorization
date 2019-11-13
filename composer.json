@@ -1,0 +1,19 @@
+{
+  "name": "gofintech/service-authorization",
+  "description": "Utility for service password management",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Antanas Kompanas",
+      "email": "a.kompanas@gofintech.lt"
+    }
+  ],
+  "require": {
+    "php": ">=7.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "GoFinTech\\ServiceAuth\\": "src/"
+    }
+  }
+}
