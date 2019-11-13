@@ -32,7 +32,7 @@ class CredentialHandler
         }
 
         $config = json_decode(file_get_contents($authFile), true);
-        $this->authKey = $config['authKey'];
+        $this->authKey = base64_decode($config['authKey']);
         // There is enough secret in the key itself and there is no easy way to generate IV from
         // other source than the config file itself.
         $this->iv = base64_decode('n8EaEtujjeQ0Lj3AFR4qQg==');
